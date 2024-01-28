@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 0 20px ;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+.header__logo {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 55px;
+  color: #5f2eea;
+  margin: 0;
+}
+.header__burger_button {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+.header__burger_button span {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  left: 0px;
+  background-color: #5f2eea;
+  border-radius: 3px;
+  border: none;
+}
+.header__burger_button span:nth-child(2) {
+  transform: translateY(-5px);
+}
+.header__burger_button span:nth-child(3) {
+  transform: translateY(5px);
+}
