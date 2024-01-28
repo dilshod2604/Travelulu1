@@ -42,6 +42,23 @@ body {
   color: #5f2eea;
   margin: 0;
 }
+.header__nav{
+   position: absolute; 
+   right: 0px;
+   top: -300px;
+   background-color:bisque;
+   width: 200px;
+   height: 300px;
+   padding:100px 0 0 0 ;
+   border:none;
+   border-radius: 10px;
+   transition: tranform 1s;
+
+}
+
+.header.open .header__nav{
+    transform:translateY(350px)
+}
 .header__burger_button {
   width: 20px;
   height: 20px;
@@ -58,6 +75,17 @@ body {
   background-color: #5f2eea;
   border-radius: 3px;
   border: none;
+  transition: transform .5s opacity .5s background-color .5s;
+
+}
+.header.open .header__burger_button span:nth-child(1){
+transform: rotate(-45deg);
+}
+.header.open .header__burger_button span:nth-child(2){
+opacity: 0;
+}
+.header.open .header__burger_button span:nth-child(3){
+transform: rotate(45deg);
 }
 .header__burger_button span:nth-child(2) {
   transform: translateY(-5px);
@@ -65,3 +93,4 @@ body {
 .header__burger_button span:nth-child(3) {
   transform: translateY(5px);
 }
+
