@@ -211,6 +211,8 @@ body {
   padding: 20px;
 }
 .tool__boxes_img {
+  width: 100%;
+  object-fit: cover;
 }
 .tool__boxes__tile {
   margin: 0;
@@ -274,11 +276,83 @@ body {
   grid-auto-rows: 603px;
   gap: 32px;
 }
-.gallery__boxes__img{
-width: 100%;
-object-fit: cover;
+.planing__ahead_content {
+  margin-top: 124px;
+}
+.planing__ahead__title {
+  max-width: 619px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4e4b66;
+  margin: 0 auto;
+}
+.planing__ahead__top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 118px;
+}
+.plaing__ahead__images {
+  width: 100%;
+}
+.planing__ahead_img {
+  width: 100%;
+  object-fit: cover;
+  height: 509px;
+}
+.planing__ahead__box {
+  width: 100%;
+  max-width: 330px;
+}
+.left {
+  position: relative;
+  left: 30px;
+}
+.middle {
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+.right {
+  position: relative;
+  right: 30px;
 }
 
+.gallery__boxes__img {
+  width: 100%;
+  object-fit: cover;
+}
+.planing__ahead__box__buttons {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #fff;
+  gap: 20px;
+}
+.box__buttons__text {
+  max-width: 225px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #4e4b66;
+}
+@media (max-width: 1000px) {
+  .plaing__ahead__images {
+    order: -1;
+  }
+  .planing__ahead__top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box1 .planing__ahead__box__buttons {
+    flex-direction: row-reverse;
+  }
+  .box2 .box__button__img {
+    transform: rotate(180deg);
+  }
+}
 
 @media (max-width: 700px) {
   .plan__images {
@@ -293,6 +367,10 @@ object-fit: cover;
   }
   .tool__box {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .tool__boxes_img {
+    width: 70%;
+    object-fit: cover;
   }
 }
 
@@ -311,13 +389,11 @@ object-fit: cover;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 200px;
   }
-  .gallery__box{
-    grid-template-columns: repeat(1 ,1fr);
+  .gallery__box {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .gallery__top{
-
+  .gallery__top {
     flex-direction: column;
     justify-content: center;
   }
-
 }
